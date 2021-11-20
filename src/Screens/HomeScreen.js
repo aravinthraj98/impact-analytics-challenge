@@ -18,7 +18,9 @@ function HomeScreen({ candidateData }) {
     }
     let tempData = JSON.parse(JSON.stringify(candidateData));
     let newData = tempData.filter((value, index) => {
-      if (value.name.toLowerCase().indexOf(e.target.value) !== -1) {
+      if (
+        value.name.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1
+      ) {
         return value;
       }
     });
@@ -71,6 +73,11 @@ function HomeScreen({ candidateData }) {
         }}
         onChange={handleChange}
       />
+      {data.length === 0 && (
+        <div style={{ textAlign: 'center', color: 'red' }}>
+          no data found ,In case of searching remove key to show all
+        </div>
+      )}
       <div className='flexcontainer'>
         {data.map((value, index) => (
           <Card key={index} data={value} />
