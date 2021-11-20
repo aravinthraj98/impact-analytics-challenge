@@ -21,7 +21,7 @@ function Card({ data }) {
             <div className="image">
                 <img src={data.Image} className="icon" alt="no image" />
             </div>
-            <div>
+            <div style={{ width: "60%" }}>
                 <div className="text">Name  <b>{data && data.name}</b>
 
 

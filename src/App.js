@@ -10,6 +10,7 @@ import {
 import HomeScreen from './Screens/HomeScreen';
 import { useEffect, useState } from 'react';
 import UpdateScreen from './Screens/UpdateScreen';
+import StatusView from './Screens/StatusView';
 
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
         <Routes>
  <Route path="/" element={<HomeScreen candidateData={candidateData} />} />
  <Route path="/:id" element={<UpdateScreen candidateData={candidateData} changeStatus={changeStatus}/>} />
+ <Route path="/selected" element={<StatusView candidateData={candidateData} />} />
+  <Route path="/rejected" element={<StatusView candidateData={candidateData} />} />
         </Routes>
        
       </Router>
