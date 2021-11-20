@@ -24,7 +24,7 @@ function App() {
       }
       setCandidateData(data);
     });
-    alert('fetching');
+    // alert('fetching');
     // }
   }, []);
   const changeStatus = (id, status) => {
