@@ -15,7 +15,7 @@ function UpdateCard({ data, changeStatus }) {
         <div className="container">
             <div className="image" style={{ backgroundColor: "black", marginTop: "8%" }}>
                 {/* <b>IMPACT CANDIDATE</b> */}
-                <img src={data.Image} className="icon" />
+                <img src={data.Image} alt={"no Image"} className="icon" />
                 <p style={{ color: getBackgroundColor(data.status) }} >{data.status}</p>
             </div>
             <div className="flexcontainer" style={{ padding: 10, justifyContent: "center" }} >

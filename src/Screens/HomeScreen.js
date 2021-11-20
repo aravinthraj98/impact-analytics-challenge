@@ -8,11 +8,10 @@ function HomeScreen({ candidateData }) {
   const location = useLocation();
   useEffect(() => {
     setData(candidateData);
-  }, [candidateData]);//populate data
+  }, [candidateData]); //populate data
 
-
-
-  const handleChange = (e) => {//search algorithm
+  const handleChange = (e) => {
+    //search algorithm
     if (e.target.value === '') {
       setData(candidateData);
       return;
@@ -27,7 +26,7 @@ function HomeScreen({ candidateData }) {
   };
   return (
     <>
-      {location.pathname == '/' && (
+      {location.pathname === '/' && (
         <div
           style={{
             display: 'flex',

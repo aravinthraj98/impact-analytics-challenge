@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useHref, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import HomeScreen from './HomeScreen';
 
 function StatusView({ candidateData }) {
