@@ -42,9 +42,9 @@ function HomeScreen({ candidateData }) {
             <button
               type='radio'
               style={{ backgroundColor: 'green', color: 'whitesmoke' }}
-              onClick={() => navigate('/selected')}
+              onClick={() => navigate('/shortlisted')}
             >
-              SHOW SELECTED{' '}
+              SHOW SHORTLISTED{' '}
             </button>
           </div>
 

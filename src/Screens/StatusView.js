@@ -10,8 +10,8 @@ function StatusView({ candidateData }) {
   useEffect(() => {
     //dynamic data loads
     let status = 'rejected';
-    if (navigate.pathname === '/selected') {
-      status = 'selected';
+    if (navigate.pathname === '/shortlisted') {
+      status = 'shortlisted';
     }
     let tempData = JSON.parse(JSON.stringify(candidateData)); //deep copying array
     let newData = tempData.filter((value, index) => {

@@ -1,5 +1,5 @@
 const getBackgroundColor = (status) => {
-  if (status === 'selected') {
+  if (status === 'shortlisted') {
     return 'green';
   } else if (status === 'rejected') {
     return 'red';
