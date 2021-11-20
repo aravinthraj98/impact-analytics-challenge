@@ -62,7 +62,7 @@ function HomeScreen({ candidateData }) {
       <br />
 
       <input
-        type='text'
+        type="search"
         placeholder='Search'
         style={{
           width: '70%',

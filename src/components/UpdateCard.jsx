@@ -19,7 +19,10 @@ function UpdateCard({ data, changeStatus }) {
                 <p style={{ color: getBackgroundColor(data.status) }} >{data.status}</p>
             </div>
             <div className="flexcontainer" style={{ padding: 10, justifyContent: "center" }} >
+
                 <button className="button" style={{ backgroundColor: "green", color: "white" }} value={data.id} name="selected" onClick={handlePress}>select</button>
+
+                
                 <button value={data.id} style={{ backgroundColor: "red", color: "white" }} onClick={handlePress} className="button" name="rejected">Reject</button>
             </div>
         </div>
