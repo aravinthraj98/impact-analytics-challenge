@@ -1,20 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { getBackgroundColor } from "../helper/util"
 function Card({ data }) {
-    console.log(data)
+
     const navigate = useNavigate();
 
-    // const getBackgroundColor = (status) => {
-    //     if (status == "selected") {
-    //         return "green";
-    //     }
-    //     else if (status == "rejected") {
-    //         return "red";
-    //     }
-    //     else {
-    //         return "yellow";
-    //     }
-    // }
+   
 
     return (
         <div className="card" >

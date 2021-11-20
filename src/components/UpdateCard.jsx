@@ -2,9 +2,9 @@ import { getBackgroundColor } from "../helper/util";
 import { useNavigate } from 'react-router-dom';
 
 function UpdateCard({ data, changeStatus }) {
-    const navigate = useNavigate()
-    console.log(data)
-    const handlePress = (e) => {
+    const navigate = useNavigate() 
+    // console.log(data)
+    const handlePress = (e) => {// changing the status either applied or rejected
         changeStatus(e.target.value, e.target.name);
         navigate("/")
 
